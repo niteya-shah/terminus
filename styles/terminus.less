@@ -1,4 +1,60 @@
 @import "ui-variables";
+// minimal xterm base styles for Atom/Pulsar less pipeline compatibility
+
+.xterm {
+  position: relative;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.xterm:focus,
+.xterm .xterm-helper-textarea {
+  outline: none;
+}
+
+.xterm .xterm-viewport {
+  overflow-y: scroll;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.xterm .xterm-screen {
+  position: relative;
+}
+
+.xterm .xterm-helpers {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.xterm .xterm-helper-textarea {
+  position: absolute;
+  opacity: 0;
+  left: -9999em;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: -5;
+  white-space: nowrap;
+  overflow: hidden;
+  resize: none;
+}
+
+.xterm .composition-view {
+  background: #000;
+  color: #fff;
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 // https://github.com/atom/atom/blob/master/static/variables/ui-variables.less
 
 @icon-padding: 5px;
@@ -76,6 +132,10 @@
       height: 0;
       padding: 0 5px;
       text-shadow: none;
+
+      .xterm-screen {
+        width: 100%;
+      }
 
       > .terminal {
         display: -webkit-flex;

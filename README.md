@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/badge/code_style-standard%20javascript-%23ea682c?&style=flat-square" alt="style guide">
   </a>
 </p>
-<h3 align="center">A terminal for Atom, with themes, API and more... Now coded in JavaScript!&nbsp;❤️</h3>
+<h3 align="center">A terminal for Atom and Pulsar, with themes, API and more... Now coded in JavaScript!&nbsp;❤️</h3>
 <h5 align="center">A fork of <a href="https://github.com/platformio/platformio-atom-ide-terminal">platformio/platformio-atom-ide-terminal<a/></h5>
 <br>
 
@@ -32,11 +32,11 @@
 
   Terminus development is coming to an end. Since the days it has been forked and decaffeinated, we had hoped to attract talented developers to volunteer and help further modernize the project.
 
-  To realistically keep this project relevant, modern and operational with all future versions of Atom, `atom-space-pen-views` and `term.js` dependencies need to be replaced -- since neither of which have been maintained for years or alternatively fork such dependencies and modernize them. Either case would require a re-write  Terminus's relevant source code or the dependencies or both. However a modern alternative already exists; it is called [x-terminal](https://github.com/bus-stop/x-terminal).
+  To keep this project relevant for Atom and Pulsar, Terminus now uses a modern terminal stack powered by `xterm` and `node-pty-prebuilt-multiarch`. Additional UI modernization work is still ongoing, and a modern alternative also exists: [x-terminal](https://github.com/bus-stop/x-terminal).
 
-  **We strongly recommend** that all Terminus users switch to [x-terminal](https://github.com/bus-stop/x-terminal) which is a modern terminal for Atom using relevant and maintained technologies.
+  **We strongly recommend** that all Terminus users switch to [x-terminal](https://github.com/bus-stop/x-terminal) which is a modern terminal for Atom/Pulsar using relevant and maintained technologies.
 
-  Terminus works with Atom 1.60.0 and will likely work with any minor and patch releases to the 1.6x.x Atom release branch and then stability and operation can no longer be guaranteed with future Atom versions.
+  Terminus works with Atom 1.60.0 and modern Pulsar releases, though long-term stability cannot be guaranteed without deeper dependency modernization.
   
   Apologies to all our users for any inconviniences caused.
 
@@ -51,9 +51,12 @@ Thank you for your consideration.
 ## Install
 Ready to install?
 
-You can install via apm: `apm install terminus`
+You can install via package managers:
 
-Or navigate to the install tab in Atom’s settings view, and search for Terminus.
+- Atom: `apm install terminus`
+- Pulsar: `ppm install terminus`
+
+Or navigate to the install tab in Atom/Pulsar settings view and search for Terminus.
 
 ## Usage
 
@@ -77,7 +80,7 @@ Every terminal is loaded with your system’s default initialization files. This
 ### Themes
 
 The terminal is preloaded with several themes that you can choose from.  
-Not satisfied? Use the following template in your Atom stylesheet and customize colors:
+Not satisfied? Use the following template in your Atom/Pulsar stylesheet and customize colors:
 ```css
 .terminus .xterm {
   background-color: #0d0208;
