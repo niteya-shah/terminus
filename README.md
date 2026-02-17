@@ -56,6 +56,8 @@ You can install via package managers:
 - Atom: `apm install terminus`
 - Pulsar: `ppm install terminus`
 
+For local development installs with npm, this repo intentionally does not track a lockfile to avoid npm version lockfile conflicts across Atom/Pulsar environments.
+
 Or navigate to the install tab in Atom/Pulsar settings view and search for Terminus.
 
 ## Usage
