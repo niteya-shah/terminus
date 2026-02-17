@@ -1,1 +1,2 @@
-* text=auto eol=lf
+# Reduce lockfile merge churn across contributor npm versions.
+package-lock.json merge=ours

@@ -32,7 +32,7 @@
 
   Terminus development is coming to an end. Since the days it has been forked and decaffeinated, we had hoped to attract talented developers to volunteer and help further modernize the project.
 
-  To keep this project relevant for Atom and Pulsar, Terminus now uses a modern terminal stack powered by `xterm` and `node-pty`. Additional UI modernization work is still ongoing, and a modern alternative also exists: [x-terminal](https://github.com/bus-stop/x-terminal).
+  To keep this project relevant for Atom and Pulsar, Terminus now uses a modern terminal stack powered by `xterm` and `node-pty-prebuilt-multiarch`. Additional UI modernization work is still ongoing, and a modern alternative also exists: [x-terminal](https://github.com/bus-stop/x-terminal).
 
   **We strongly recommend** that all Terminus users switch to [x-terminal](https://github.com/bus-stop/x-terminal) which is a modern terminal for Atom/Pulsar using relevant and maintained technologies.
 
@@ -55,6 +55,8 @@ You can install via package managers:
 
 - Atom: `apm install terminus`
 - Pulsar: `ppm install terminus`
+
+For local development installs with npm, this repo intentionally does not track a lockfile to avoid npm version lockfile conflicts across Atom/Pulsar environments.
 
 Or navigate to the install tab in Atom/Pulsar settings view and search for Terminus.
 
