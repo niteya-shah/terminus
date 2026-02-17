@@ -3,10 +3,10 @@
   "title": "Terminus",
   "main": "./lib/terminus",
   "version": "4.1.8",
-  "description": "A terminal for Atom, complete with themes, API and more. Now written in JavaScript! A fork of platformio-atom-ide-terminal.",
+  "description": "A terminal for Atom and Pulsar, complete with themes, API and more. Now written in JavaScript! A fork of platformio-atom-ide-terminal.",
   "author": "bus-stop and contributors",
   "license": "MIT",
-  "homepage": "https://atom.io/packages/terminus",
+  "homepage": "https://web.pulsar-edit.dev/packages/terminus",
   "repository": "https://github.com/bus-stop/terminus",
   "bugs": {
     "url": "https://github.com/bus-stop/terminus/issues/new/choose"
@@ -38,7 +38,8 @@
     }
   ],
   "engines": {
-    "atom": ">=1.41.0 <2.0.0"
+    "atom": ">=1.41.0 <2.0.0",
+    "pulsar": ">=1.0.0"
   },
   "keywords": [
     "terminus",
@@ -54,7 +55,8 @@
     "iterm",
     "iterm2",
     "console",
-    "powershell"
+    "powershell",
+    "pulsar-edit"
   ],
   "providedServices": {
     "terminusTerminal": {
@@ -71,16 +73,17 @@
     }
   },
   "scripts": {
-    "test": "atom --test spec",
+    "test": "pulsar --test spec || atom --test spec",
     "lint": "eslint .",
     "fix": "eslint . --fix",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
-    "node-pty-prebuilt-multiarch": "^0.10.0",
-    "term.js": "https://github.com/bus-stop/term.js/tarball/master",
-    "underscore": "^1.13.2"
+    "underscore": "^1.13.2",
+    "node-pty": "^1.0.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.10.0"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.1",
