@@ -1,3 +1,4 @@
+@import (less) "../node_modules/xterm/css/xterm.css";
 @import "ui-variables";
 // https://github.com/atom/atom/blob/master/static/variables/ui-variables.less
 
@@ -76,6 +77,10 @@
       height: 0;
       padding: 0 5px;
       text-shadow: none;
+
+      .xterm-screen {
+        width: 100%;
+      }
 
       > .terminal {
         display: -webkit-flex;
