@@ -82,8 +82,10 @@
     "@xterm/addon-fit": "^0.10.0",
     "@xterm/xterm": "^5.5.0",
     "atom-space-pen-views": "^2.2.0",
-    "node-pty-prebuilt-multiarch": "^0.10.1-pre.5",
-    "underscore": "^1.13.2"
+    "underscore": "^1.13.2",
+    "node-pty": "^1.0.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.10.0"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.1",
